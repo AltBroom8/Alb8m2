@@ -1,0 +1,161 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Alb8m2.MODIFICAR"
+        Title="MODIFICAR"
+        Width="1280"
+        Height="600"
+        MinWidth="1280"
+        MaxWidth="1280"
+        MinHeight="600"
+        MaxHeight="600">
+        
+    <StackPanel Background="#a9fccf">
+                <Label Content="Editar canción"   FontSize="30" FontWeight="Heavy"
+                       Foreground="#209153" >
+                </Label>
+                <TextBox Name="TituloBox" Width="400" Height="50" Watermark="Titulo" 
+                     Background="White" FontSize="25" BorderBrush="Black" BorderThickness="1"
+                     Margin="0,20,800,0"/>
+                <TextBox x:Name="Autor" Width="400" Height="50" Watermark="Autor" 
+                         Background="White" FontSize="25" BorderBrush="Black" BorderThickness="1"
+                         Margin="0,50,800,0"/>
+                <NumericUpDown Minimum="50" Maximum="999" FormatString="0" x:Name="Bpm" Width="400" Height="50" Watermark="BPM"
+                               Background="White" FontSize="25" BorderBrush="Black" BorderThickness="1"
+                               Margin="0,50,800,0" TextInput="Bpm_TextInput"/>
+                <TextBox x:Name="Portada" Width="400" Height="50" Watermark="Portada" Foreground="DarkGray"
+                         Background="White" FontSize="25" BorderBrush="Black" BorderThickness="1"
+                         Margin="0,50,800,0" IsReadOnly="True" PointerPressed="clic_textbox" PointerReleased="release_Textbox" Focusable="False"/>
+                <Button  x:Name="ButtonPortada" Width="50" Height="50" Background="#96cff2" Margin="450,-50,0,0" Cursor="Hand" Click="PortadaClick" >
+                    <Image Width="40" Height="40" Source="fileExplorer.png"  Stretch="Uniform" />
+                </Button>
+                <DatePicker Name="Fecha" Width="400" Height="50" DayFormat="ddd dd" Margin="550,-650,0,0" Background="White"
+                            BorderBrush="Black" BorderThickness="1" />
+                <ComboBox  x:Name="Minutos" Height="50" Width="110" Margin="550,-250,0,0" Background="White"  PlaceholderText="Minutos">
+                    <ComboBoxItem>1</ComboBoxItem>
+                    <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>3</ComboBoxItem>
+                    <ComboBoxItem>4</ComboBoxItem>
+                    <ComboBoxItem>5</ComboBoxItem>
+                    <ComboBoxItem>6</ComboBoxItem>
+                    <ComboBoxItem>7</ComboBoxItem>
+                    <ComboBoxItem>8</ComboBoxItem>
+                    <ComboBoxItem>9</ComboBoxItem>
+                    <ComboBoxItem>10</ComboBoxItem>
+                    <ComboBoxItem>11</ComboBoxItem>
+                    <ComboBoxItem>12</ComboBoxItem>
+                    <ComboBoxItem>13</ComboBoxItem>
+                    <ComboBoxItem>14</ComboBoxItem>
+                    <ComboBoxItem>15</ComboBoxItem>
+                    <ComboBoxItem>16</ComboBoxItem>
+                    <ComboBoxItem>17</ComboBoxItem>
+                    <ComboBoxItem>18</ComboBoxItem>
+                    <ComboBoxItem>19</ComboBoxItem>
+                    <ComboBoxItem>20</ComboBoxItem>
+                </ComboBox>
+                
+                <ComboBox  x:Name="Segundos" Height="50" Width="120" Margin="665,-250,0,0" Background="White" PlaceholderText="Segundos">
+                    <ComboBoxItem>1</ComboBoxItem>
+                    <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>3</ComboBoxItem>
+                    <ComboBoxItem>4</ComboBoxItem>
+                    <ComboBoxItem>5</ComboBoxItem>
+                    <ComboBoxItem>6</ComboBoxItem>
+                    <ComboBoxItem>7</ComboBoxItem>
+                    <ComboBoxItem>8</ComboBoxItem>
+                    <ComboBoxItem>9</ComboBoxItem>
+                    <ComboBoxItem>10</ComboBoxItem>
+                    <ComboBoxItem>11</ComboBoxItem>
+                    <ComboBoxItem>12</ComboBoxItem>
+                    <ComboBoxItem>13</ComboBoxItem>
+                    <ComboBoxItem>14</ComboBoxItem>
+                    <ComboBoxItem>15</ComboBoxItem>
+                    <ComboBoxItem>16</ComboBoxItem>
+                    <ComboBoxItem>17</ComboBoxItem>
+                    <ComboBoxItem>18</ComboBoxItem>
+                    <ComboBoxItem>19</ComboBoxItem>
+                    <ComboBoxItem>20</ComboBoxItem>
+                    <ComboBoxItem>21</ComboBoxItem>
+                    <ComboBoxItem>22</ComboBoxItem>
+                    <ComboBoxItem>23</ComboBoxItem>
+                    <ComboBoxItem>24</ComboBoxItem>
+                    <ComboBoxItem>25</ComboBoxItem>
+                    <ComboBoxItem>26</ComboBoxItem>
+                    <ComboBoxItem>27</ComboBoxItem>
+                    <ComboBoxItem>28</ComboBoxItem>
+                    <ComboBoxItem>29</ComboBoxItem>
+                    <ComboBoxItem>30</ComboBoxItem>
+                    <ComboBoxItem>31</ComboBoxItem>
+                    <ComboBoxItem>32</ComboBoxItem>
+                    <ComboBoxItem>33</ComboBoxItem>
+                    <ComboBoxItem>34</ComboBoxItem>
+                    <ComboBoxItem>35</ComboBoxItem>
+                    <ComboBoxItem>36</ComboBoxItem>
+                    <ComboBoxItem>37</ComboBoxItem>
+                    <ComboBoxItem>38</ComboBoxItem>
+                    <ComboBoxItem>39</ComboBoxItem>
+                    <ComboBoxItem>40</ComboBoxItem>
+                    <ComboBoxItem>41</ComboBoxItem>
+                    <ComboBoxItem>42</ComboBoxItem>
+                    <ComboBoxItem>43</ComboBoxItem>
+                    <ComboBoxItem>44</ComboBoxItem>
+                    <ComboBoxItem>45</ComboBoxItem>
+                    <ComboBoxItem>46</ComboBoxItem>
+                    <ComboBoxItem>47</ComboBoxItem>
+                    <ComboBoxItem>48</ComboBoxItem>
+                    <ComboBoxItem>49</ComboBoxItem>
+                    <ComboBoxItem>50</ComboBoxItem>
+                    <ComboBoxItem>51</ComboBoxItem>
+                    <ComboBoxItem>52</ComboBoxItem>
+                    <ComboBoxItem>53</ComboBoxItem>
+                    <ComboBoxItem>54</ComboBoxItem>
+                    <ComboBoxItem>55</ComboBoxItem>
+                    <ComboBoxItem>56</ComboBoxItem>
+                    <ComboBoxItem>57</ComboBoxItem>
+                    <ComboBoxItem>58</ComboBoxItem>
+                    <ComboBoxItem>59</ComboBoxItem>
+                </ComboBox>
+                <ComboBox  x:Name="Key" Height="50" Width="110" Margin="550,-150,0,0" Background="White" PlaceholderText="Key">
+                    <ComboBoxItem>C Mayor</ComboBoxItem>
+                    <ComboBoxItem>G Mayor</ComboBoxItem>
+                    <ComboBoxItem>D Mayor</ComboBoxItem>
+                    <ComboBoxItem>A Mayor</ComboBoxItem>
+                    <ComboBoxItem>E Mayor</ComboBoxItem>
+                    <ComboBoxItem>B Mayor</ComboBoxItem>
+                    <ComboBoxItem>F# Mayor</ComboBoxItem>
+                    <ComboBoxItem>Db Mayor</ComboBoxItem>
+                    <ComboBoxItem>Ab Mayor</ComboBoxItem>
+                    <ComboBoxItem>Eb Mayor</ComboBoxItem>
+                    <ComboBoxItem>Bb Mayor</ComboBoxItem>
+                    <ComboBoxItem>F Mayor</ComboBoxItem>
+                    <ComboBoxItem>a Menor</ComboBoxItem>
+                    <ComboBoxItem>e Menor</ComboBoxItem>
+                    <ComboBoxItem>b Menor</ComboBoxItem>
+                    <ComboBoxItem>f# Menor</ComboBoxItem>
+                    <ComboBoxItem>c# Menor </ComboBoxItem>
+                    <ComboBoxItem>g# Menor</ComboBoxItem>
+                    <ComboBoxItem>d# Menor</ComboBoxItem>
+                    <ComboBoxItem>bb Menor</ComboBoxItem>
+                    <ComboBoxItem>f Menor</ComboBoxItem>
+                    <ComboBoxItem>c Menor</ComboBoxItem>
+                    <ComboBoxItem>g Menor</ComboBoxItem>
+                    <ComboBoxItem>d Menor</ComboBoxItem>
+                    
+                </ComboBox>
+                <TextBox x:Name="Audio" Width="400" Height="50" Watermark="Audio" 
+                         Background="White" FontSize="25" BorderBrush="Black" BorderThickness="1"
+                         Margin="550,-50,800,0" IsReadOnly="True" Foreground="DarkGray"
+                         PointerPressed="clic_textbox" PointerReleased="release_Textbox" Focusable="False"/>
+                <Button  x:Name="ButtonAudio" Width="50" Height="50" Background="#96cff2" Margin="960,-50,0,0" Cursor="Hand" Click="AudioClick" >
+                    <Image Width="40" Height="40" Source="fileExplorer.png" Stretch="Uniform" />
+                </Button>
+                <Button Name="AceptarButton" Width="180" Height="50" Content="Aceptar" FontSize="25" 
+                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontFamily="Arial"
+                        Cursor="Hand" Margin="40,30,0,0" Background="#87ff9b" Click="aceptarButton"/>
+                <Button Name="RechazarButton" Width="180" Height="50" Content="Rechazar" FontSize="25" 
+                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontFamily="Arial"
+                        Cursor="Hand" Margin="250,-50,0,0" Background="#87ff9b" Click="RechazarButton_OnClick"/>
+        </StackPanel>
+</Window>

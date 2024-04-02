@@ -1,0 +1,49 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="720"
+        x:Class="Alb8m2.MainWindow"
+        Title="Alb8m2"
+        Width="1280"
+        Height="720"
+        MinWidth="1280"
+        MaxWidth="1280"
+        MinHeight="720"
+        MaxHeight="720">
+        <Grid>
+                <StackPanel Width="1280" Height="50" VerticalAlignment="Top" Background="#c7f0ed">
+                        <TextBox x:Name="SearchBox" Width="600" Watermark="Buscar un titulo..." 
+                        Background="White" BorderBrush="Black" BorderThickness="1"
+                        KeyUp="busqueda"/>
+                </StackPanel>
+                <ScrollViewer Name="Scroll" Width="1280" Height="530" HorizontalAlignment="Stretch" Margin="0,-100,0,0">
+                        <Grid Name="mainGrid" Background="#c7f0ed"></Grid>
+                </ScrollViewer >
+                <StackPanel  Width="1280" Height="144" Background="#47f595" VerticalAlignment="Bottom">
+                        <Button x:Name="InfoButton" Margin="25, 22, 0, 0" Width="100" Height="100" Cursor="Hand" Click="InfoButton_OnClick">
+                                <Image x:Name="infoImage" Width="100" Height="100" Source="not_found.png" Stretch="Uniform" 
+                                       x:FieldModifier="public"></Image>
+                        </Button>
+                        <Slider x:Name="BarraReproduccion" Margin="-200, -75, 0, 0" Width="800"/>
+                        <Button x:Name="PpButton" Margin="500, -35, 0, 0" Width="50" Height="50" Background="Transparent"
+                        BorderBrush="{x:Null}" CornerRadius="25" Cursor="Hand" Click="PpButton_OnClick">
+                                <Image  x:Name="PlayImage" Width="50" Height="50" Source="play.png" Stretch="Uniform"
+                                        x:FieldModifier="public"></Image>
+                        </Button>
+                        <Label Name="Tiempo" FontFamily="Arial" FontWeight="Bold" FontSize="25" Margin="980, -80, 0, 0" >0:00</Label>
+                        <StackPanel Margin="1100, -115, 0, 0">
+                                <Button Content="Nuevo" Width="140" Height="30" HorizontalContentAlignment="Center" Click="OnNuevoButtonClick"
+                                        VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" FontFamily="Arial"
+                                        Cursor="Hand"/>
+                                <Button Content="Modificar" Width="140" Height="30" HorizontalContentAlignment="Center" 
+                                        VerticalContentAlignment="Center" Margin="0, 5, 0, 0"
+                                        FontSize="16" FontWeight="Bold" FontFamily="Arial" Cursor="Hand" Click="ModificarFuncion"/>
+                                <Button Content="Borrar" Width="140" Height="30" HorizontalContentAlignment="Center" 
+                                        VerticalContentAlignment="Center" Margin="0, 5, 0, 0"
+                                        FontSize="16" FontWeight="Bold" FontFamily="Arial" Cursor="Hand" Click="borrar"/>
+                        </StackPanel>
+                                
+                </StackPanel>
+        </Grid>
+</Window>
